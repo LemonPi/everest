@@ -24,7 +24,7 @@ var App = {
 					width: w, 
 					height: h,
 				}];
-				App.mywidth = 50;
+				App.mywidth = -1;
 			
 				App.drawToCanvas();
 			}, 500);
@@ -76,6 +76,7 @@ var App = {
 		//	ctx.drawImage(App.glasses, (App.comp[i].x - w / 2) * m, (App.comp[i].y - w / 2) * m, (App.comp[i].width + w) * m, (App.comp[i].height + w) * m);
 		//}
 		if (App.comp.length) {
+			if (App.mywidth == -1) App.mywidth = App.comp[0].width;
 			var scale = 2 - (App.comp[0].width/App.mywidth) + (App.initZoom - 1);
 			if (Math.abs(App.lastScale - scale) > 0.05) {
 				//console.log(scale);
