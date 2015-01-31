@@ -135,8 +135,16 @@ chrome.commands.onCommand.addListener(function(command) {
 
 chrome.browserAction.onClicked.addListener(function(tab) {
 	if (App.running) {
+		localStorage["enabled"] = false;
 		window.location.reload();
 	} else {
+		localStorage["enabled"] = true;
 		App.init();
 	}
 });
+
+window.addEventListener("load", function() {
+	if (localStorage["enabled"] == "true") {
+		App.init();
+	}
+}, false);

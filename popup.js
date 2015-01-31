@@ -1,6 +1,7 @@
 var App = {};
+
 App.start = function() {
-	window.parent.App.init();
+	chrome.extension.getBackgroundPage().location.reload();
 	window.close();
 }
 
