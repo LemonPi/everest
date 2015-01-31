@@ -24,11 +24,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.98994949"
-     inkscape:cx="372.96628"
-     inkscape:cy="859.32256"
+     inkscape:zoom="1.4"
+     inkscape:cx="298.17413"
+     inkscape:cy="869.40746"
      inkscape:document-units="px"
-     inkscape:current-layer="layer2"
+     inkscape:current-layer="layer3"
      showgrid="false"
      inkscape:window-width="1694"
      inkscape:window-height="746"
@@ -47,6 +47,23 @@
       </cc:Work>
     </rdf:RDF>
   </metadata>
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="background">
+    <rect
+       style="color:#000000;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:3.20000052000000010;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect3837"
+       width="218.19295"
+       height="218.19295"
+       x="224.15234"
+       y="85.54467"
+       rx="2.8571427"
+       ry="4.2857146"
+       inkscape:export-filename="C:\Users\Johnson\Documents\Works\Web\everest\largeicon.png"
+       inkscape:export-xdpi="52.79731"
+       inkscape:export-ydpi="52.79731" />
+  </g>
   <g
      inkscape:label="Chair"
      inkscape:groupmode="layer"
@@ -84,10 +101,11 @@
   <g
      inkscape:groupmode="layer"
      id="layer2"
-     inkscape:label="Eye">
+     inkscape:label="Eye"
+     sodipodi:insensitive="true">
     <path
        sodipodi:type="arc"
-       style="color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:3.20000052000000010;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       style="color:#000000;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:3.20000052;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
        id="path3813"
        sodipodi:cx="302.54068"
        sodipodi:cy="170.49901"
@@ -100,7 +118,7 @@
        transform="translate(30.304576,3.5355339)" />
     <path
        sodipodi:type="arc"
-       style="color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:5.32430076999999980;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       style="color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:5.32430077;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
        id="path3813-9"
        sodipodi:cx="302.54068"
        sodipodi:cy="170.49901"
@@ -112,7 +130,7 @@
        sodipodi:open="true"
        transform="matrix(0.60101796,0,0,0.60101801,151.01303,71.561566)" />
     <path
-       style="color:#000000;fill:#e6e6e6;fill-opacity:1;fill-rule:nonzero;stroke:#e6e6e6;stroke-width:3.20000052000000010;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       style="color:#000000;fill:#e6e6e6;fill-opacity:1;fill-rule:nonzero;stroke:#e6e6e6;stroke-width:3.20000052;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
        d="m 322.45802,175.72904 5.11216,6.61878 c 0.61235,0.79282 -0.334,1.7633 -1.04131,3.08908 l -3.94919,7.40245 c -1.11757,2.09481 -3.68547,0.98679 -5.13828,0.35853 -4.94119,-2.13681 -7.89525,-5.46591 -8.07752,-10.45807 -0.0577,-1.58182 -0.66745,-4.34402 1.64532,-4.88094 l 8.19686,-1.90292 c 1.46374,-0.33981 2.63961,-1.01973 3.25196,-0.22691 z"
        id="rect3833"
        inkscape:connector-curvature="0"

@@ -2,7 +2,7 @@
 	"manifest_version": 2,
 	"name": "Everest",
 	"description": "",
-	"version": "1.0",
+	"version": "1.1",
 	"icons": {"128": "largeicon.png"},
 	"browser_action": {
 		"default_title": "Everest"
@@ -18,7 +18,7 @@
 			"description": "Recalibrate 100% zoom level distance"
 		}
 	},
-	"minimum_chrome_version": "38",
+	"minimum_chrome_version": "42",
 	"permissions": [
 		"tabs"
 	]
