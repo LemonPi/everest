@@ -76,12 +76,12 @@ var App = {
 		//	ctx.drawImage(App.glasses, (App.comp[i].x - w / 2) * m, (App.comp[i].y - w / 2) * m, (App.comp[i].width + w) * m, (App.comp[i].height + w) * m);
 		//}
 		if (App.comp.length) {
-			var scale = 2 - (App.comp[0].width/App.mywidth);
+			var scale = 2 - (App.comp[0].width/App.mywidth) + (App.initZoom - 1);
 			if (Math.abs(App.lastScale - scale) > 0.05) {
 				//console.log(scale);
 				//document.body.style.transform = scale < 1? "": "scale(" + scale + ")";
 				try {
-					chrome.tabs.setZoom(Math.max(1, scale));
+					chrome.tabs.setZoom(Math.max(App.initZoom, scale));
 				} catch (e) {}
 				App.lastScale = scale;
 			}
@@ -93,6 +93,13 @@ App.running = false;
 App.lastScale = 1;
 
 App.init = function() {
+	chrome.tabs.getZoom(function(zoom) {
+		App.initZoom = zoom;
+		App.init_real();
+	});
+}
+
+App.init_real = function() {
 	if (App.running) return;
 	App.running = true;
 	App.hasInit = true;
