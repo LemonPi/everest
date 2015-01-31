@@ -4,7 +4,7 @@
 	"description": "",
 	"version": "1.0",
 	"browser_action": {
-		"default_title": "Autozoom"
+		"default_title": "Everest"
 	},
 	"background": {
 		"page": "background.html"
