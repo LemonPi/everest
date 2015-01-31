@@ -77,12 +77,12 @@ var App = {
 		//}
 		if (App.comp.length) {
 			if (App.mywidth == -1) App.mywidth = App.comp[0].width;
-			var scale = 2 - (App.comp[0].width/App.mywidth) + (App.initZoom - 1);
+			var scale = Math.max(App.initZoom, 2 - (App.comp[0].width/App.mywidth) + (App.initZoom - 1));
 			if (Math.abs(App.lastScale - scale) > 0.05) {
 				//console.log(scale);
 				//document.body.style.transform = scale < 1? "": "scale(" + scale + ")";
 				try {
-					chrome.tabs.setZoom(Math.max(App.initZoom, scale));
+					chrome.tabs.setZoom(scale);
 				} catch (e) {}
 				App.lastScale = scale;
 			}
@@ -144,6 +144,8 @@ chrome.commands.onCommand.addListener(function(command) {
 chrome.browserAction.onClicked.addListener(function(tab) {
 	if (App.running) {
 		localStorage["enabled"] = false;
+		App.running = false;
+		chrome.tabs.setZoom(App.initZoom);
 		window.location.reload();
 	} else {
 		localStorage["enabled"] = true;
