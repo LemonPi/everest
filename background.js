@@ -82,7 +82,7 @@ var App = {
 				//console.log(scale);
 				//document.body.style.transform = scale < 1? "": "scale(" + scale + ")";
 				try {
-					chrome.tabs.setZoom(scale);
+					chrome.tabs.setZoom(scale, function() {chrome.runtime.lastError;});
 				} catch (e) {}
 				App.lastScale = scale;
 			}
