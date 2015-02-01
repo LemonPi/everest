@@ -2,7 +2,7 @@
 	"manifest_version": 2,
 	"name": "Everest",
 	"description": "An extension for automatically adjusting zoom level based on eye distance, requires webcam",
-	"version": "1.1",
+	"version": "1.2",
 	"icons": {"128": "largeicon.png"},
 	"browser_action": {
 		"default_title": "Everest"
@@ -20,6 +20,5 @@
 	},
 	"minimum_chrome_version": "42",
 	"permissions": [
-		"tabs"
 	]
 }
