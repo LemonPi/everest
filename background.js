@@ -80,6 +80,7 @@ var App = {
 		if (App.comp.length) {
 			if (App.mywidth == -1) App.mywidth = App.comp[0].width;
 			var scale = Math.max(App.initZoom, 2 - (App.comp[0].width/App.mywidth) + (App.initZoom - 1));
+			if (localStorage["threshold"]) App.threshold = parseInt(localStorage["threshold"]) / 100;
 			if (Math.abs(App.lastScale - scale) > App.threshold) {
 				//console.log(scale);
 				//document.body.style.transform = scale < 1? "": "scale(" + scale + ")";
@@ -89,6 +90,7 @@ var App = {
 				App.lastScale = scale;
 			}
 		}
+		if (localStorage["cycletime"]) App.cycletime = parseInt(localStorage["cycletime"]);
 	}
 };
 
