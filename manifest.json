@@ -20,5 +20,10 @@
 	},
 	"minimum_chrome_version": "42",
 	"permissions": [
-	]
+	],
+	"options_ui": {
+		"page": "options.html",
+		"chrome_style": true
+	}
+
 }
