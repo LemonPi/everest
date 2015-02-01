@@ -10,7 +10,7 @@ When our team members worked together previously, we noted that one team member 
 
 We implemented Everest as a lightweight Chrome extension that runs in the background to detect the user's position and zooms the page. The user can enable or disable the automatic zoom with a single click, and can press a key sequence (default to Ctrl+Shift+3) to recalibrate the resting position.
 
-The core facial detection is handled by [Neave's face detection library](https://github.com/neave/face-detection). To access the webcam, we used WebRTC, part of HTML5, to stream the video data. We tweaked the detection frequency for efficiency: the current version samples the video at 2hz to avoid CPU usage. In initial testing, we discovered that the page would often "jitter", where the zoom will repeatedly change as the video data changes slightly, which disrupts reading. We fixed this problem by avoiding zoom changes that are less than 5%.
+The core facial detection is handled by [Neave's face detection library](https://github.com/neave/face-detection). To access the webcam, we used WebRTC, part of HTML5, to stream the video data. We tweaked the detection frequency for efficiency: the current version samples the video at 4/3Hz to avoid CPU usage. In initial testing, we discovered that the page would often "jitter", where the zoom will repeatedly change as the video data changes slightly, which disrupts reading. We fixed this problem by avoiding zoom changes that are less than 10%.
 
 The actual zooming is performed by Chrome's zoom API, which was recently introduced on the Dev channel in Chrome 42, so this extension is one of the first extensions to take advantage of this feature.
 

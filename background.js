@@ -1,6 +1,8 @@
 "use strict";
 var App = {
 	start: function(stream) {
+		App.threshold = 0.1;
+		App.cycletime = 750;	// ms
 		App.stream = stream;
 		var listener;
 		App.video.addEventListener('canplay', listener = function() {
@@ -47,7 +49,7 @@ var App = {
 	drawToCanvas: function() {
 		if (!App.running) return;
 		//requestAnimationFrame(App.drawToCanvas);
-		setTimeout(App.drawToCanvas, 500);
+		setTimeout(App.drawToCanvas, App.cycletime);
 		
 		var video = App.video,
 			ctx = App.context,
@@ -78,7 +80,7 @@ var App = {
 		if (App.comp.length) {
 			if (App.mywidth == -1) App.mywidth = App.comp[0].width;
 			var scale = Math.max(App.initZoom, 2 - (App.comp[0].width/App.mywidth) + (App.initZoom - 1));
-			if (Math.abs(App.lastScale - scale) > 0.05) {
+			if (Math.abs(App.lastScale - scale) > App.threshold) {
 				//console.log(scale);
 				//document.body.style.transform = scale < 1? "": "scale(" + scale + ")";
 				try {
